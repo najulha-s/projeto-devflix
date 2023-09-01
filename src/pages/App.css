@@ -12,7 +12,7 @@
 }
 
 body {
-    background: #212426;
+    background: #212629;
 }
 
 #app {
@@ -31,19 +31,45 @@ body {
 .logo img {
     width: 70%;
     height: auto;
-    display: block;
-    margin: auto;
+    display: flex;
+    margin: left;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+.linkMenu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    font-size: 20px;
+    list-style: none;
+   
+}
+
+.linkMenu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkMenu ul li a:hover{
+    color: #00A3FF;
 }
 
 .search {
-    width: 70%;
-    margin: 4rem 0 2rem;
+    width: 30em;
+    /* margin: 0rem 0 2rem; */
+    margin-left: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 1.75rem;
-    border-radius: 4rem;
-    background: #1f2123;
+    padding: 0.1rem 0.6rem;
+    border-radius: 3rem;
+    background: #64697A;
     box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
     -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
 
@@ -54,15 +80,14 @@ body {
     border: none;
     padding-right: 1rem;
     outline: none;
-    color: #a1a1a1;
-    background: #1f2123;
+    color: rgba(51, 49, 49, 0.836);
+    background:  #64697A;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.search img {
-    width: 35px;
-    height: 35px;
+.search ion-icon {
+    color: #000;
     cursor: pointer;
 
 }
@@ -77,6 +102,17 @@ body {
     color: #f9d3b4;
 }
 
+.h1tprt {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.ladoalado {
+    display: flex;
+}
+
 .container {
     width: 100%;
     margin-top: 3rem;
@@ -85,6 +121,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 @media screen and (max-width:600px) {
     .app {
