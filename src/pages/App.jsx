@@ -57,13 +57,15 @@ const App = () => {
                     <ion-icon name="search-outline" size="large" onClick={() => searchMovies(searchTerm)} ></ion-icon>
                 </div>
             </div>
-                                                                                                                                                      
+
 
             <div className="h1tprt"><h1>Lançamentos</h1><ion-icon name="chevron-forward-outline"></ion-icon></div>
             {movies?.length > 0 ? (
-                <div className="container"><section className="ladoalado">
-                    {movies.map((movie) => (<MovieCard key={movie.imdbID} movies={movie} />))}</section>
-                </div>
+                <>
+                    <div className="container"><section className="ladoalado">
+                        {movies.map((movie) => (<MovieCard key={movie.imdbID} movies={movie} />))}</section>
+                    </div>
+                </>
             ) : (
                 <div className="empty">
                     <h2>Nnehum filme encontrado 🦈</h2>
@@ -92,7 +94,7 @@ const App = () => {
                 </div>
             )}
 
-            <Footer link={"https:github.com.br"}>GabsAlcaide</Footer>
+            <Footer link={"https:github.com.br"}>najulha</Footer>
         </div>
     )
 
